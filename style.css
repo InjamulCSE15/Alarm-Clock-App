@@ -3,10 +3,10 @@
 
 body {
     text-align: center;
-    background: url('./Preview/photo-1610352992637-ef8ff8444542.jpg');
+    /* background: url('./Preview/photo-1610352992637-ef8ff8444542.jpg');
     background-repeat:no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position:center; */
 }
 
 h1 {

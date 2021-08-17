@@ -63,7 +63,7 @@ startStop.onclick = function() {
         alarmElement = hours.value + ":" + minutes.value + ":" + seconds.value + " " + ampm.value;
         this.textContent = "Reset Alarm";
         activeAlarm = true;
-        // console.log(alarmElement);
+        console.log(alarmElement);
     }
     else{
         hours.disable = false;
