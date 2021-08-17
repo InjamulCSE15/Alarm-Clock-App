@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 body {
-    background-color: antiquewhite;
     text-align: center;
-    
+    background: url('./Preview/photo-1610352992637-ef8ff8444542.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
 }
+
+
 
 h1 {
     font-size: 45px;
@@ -50,7 +54,8 @@ h1 {
 
 button {
     cursor: pointer;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: rgb(0, 255, 98);
@@ -62,4 +67,9 @@ button {
 button:hover {
     background-color: blue;
     color: white;
+}
+
+footer {
+    padding-top: 12%;
+    font-family: 'Libre Baskerville', serif;
 }
