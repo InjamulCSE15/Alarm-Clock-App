@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
 
-    <title>Alarm CLock App</title>
-</head>
-<body>
-    <div class="container">
-        <h1 id="timer"></h1>
-        <h2>Enter your alarm time</h2>
-        <select id="hours"></select>
-        <select id="minutes"></select>
-        <select id="seconds"></select>
-        <select id="ampm">
-            <option value="AM">AM</option>
-            <option value="PM">PM</option>
-        </select>
+<html lang='en'>
+	<head>
+		<title>My Dream Alarm Clock</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+		<link rel='stylesheet' type='text/css' href='style.css'>
+	</head>
+	<body>
+		
+		<div id='alarm-container'>
+            <h2 id='clock'></h2>
+			<h3>Set Alarm Time</h3>
+				
+					<select id='alarmHours' ></select>
+				
+					<select id='alarmMinutes' ></select>
+					
+					<select id='alarmSeconds' ></select>
+					
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+				
+            <div class="buttonSetClear">
 
-        <div>
-            <button id="startStop">Set Alarm</button>
-        </div>
-    <footer>
-        <strong>© 2021, Injamul Alam | All rights reserved.</strong>
-    </footer>
-    </div>
-
-
-
-    <!-- JavaScript Here -->
-    <script src="myScript.js"></script>
-</body>
+				<button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+                <button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+			
+            </div>
+		</div>
+        <footer>
+            <strong>© 2021, Injamul Alam | All rights reserved.</strong>
+        </footer>
+		<script type='text/javascript' src='myScript.js'></script>
+	</body>
 </html>

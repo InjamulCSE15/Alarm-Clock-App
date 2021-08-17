@@ -3,25 +3,37 @@
 
 body {
     text-align: center;
-    /* background: url('./Preview/photo-1610352992637-ef8ff8444542.jpg');
-    background-repeat:no-repeat;
+     background: url('./Preview/photo-1610352992637-ef8ff8444542.jpg');
+   background-repeat:no-repeat;
     background-size: cover;
-    background-position:center; */
+    background-position:center;
 }
 
-h1 {
-    font-size: 45px;
-    color: black;
+
+#clock {
+    padding-top: 3%;
+    font-size: 40px;
     font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    color: black;
 }
 
 h2 {
-    font-size: 35px;
+	text-align:center;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+}
+
+#alarm-container {
+    font-family: 'Libre Baskerville', serif;
     color: black;
-    font-family: 'Libre Baskerville', serif;
 }
 
-#hours {
+
+#alarmHours {
     width: 15%;
     height: 40px;
     font-family: 'Libre Baskerville', serif;
@@ -29,15 +41,16 @@ h2 {
     font-weight: bold;
 }
 
-#minutes {
+#alarmMinutes {
     width: 15%;
     height: 40px;
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
     font-weight: bold;
+    
 }
 
-#seconds {
+#alarmSeconds {
     width: 15%;
     height: 40px;
     font-family: 'Libre Baskerville', serif;
@@ -48,31 +61,51 @@ h2 {
 #ampm {
     width: 15%;
     height: 40px;
+    font-family: 'Libre Baskerville', serif;
     font-size: 15px;
-    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-
 }
 
-
-button {
+#setButton {
     cursor: pointer;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    float:left;
+    height: auto;
     padding: 10px 15px;
-    border-radius: 5px;
-    background-color: rgb(0, 255, 98);
-    font-family: 'Libre Baskerville', serif;
-    font-size: large;
+    border-radius: 50px;
     font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    background-color:rgb(38, 93, 195);
+    margin-left: 5%; 
 }
 
-button:hover {
-    background-color: blue;
+#setButton:hover {
+    background-color: chartreuse;
+}
+#clearButton {
+    cursor: pointer;
+    float:right;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    background-color:tomato;
+    margin-right: 5%;
+}
+
+#clearButton:hover {
+    background-color: red;
     color: white;
 }
 
+.buttonSetClear {
+    padding-top: 10%;
+    justify-content:flex-end;
+}
+
 footer {
-    padding-top: 12%;
+    padding-top: 15%;
     font-family: 'Libre Baskerville', serif;
 }
