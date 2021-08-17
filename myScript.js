@@ -103,11 +103,11 @@ document.getElementById('alarmSeconds').disabled = true;
 document.getElementById('ampm').disabled = true;
 
 
-//when alarmtime is equal to currenttime then play a alarmSound
+//when alarmTime is equal to currentTime then play a alarmSound
 var h2 = document.getElementById('clock');
 
-/*function to calcutate the current time 
-then compare it to the alarmtime and play a alarmSound when they are equal
+/*function to calculate the current time 
+then compare it to the alarmTime and play a alarmSound when they are equal
 */
 
 setInterval(function(){
