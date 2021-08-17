@@ -9,13 +9,17 @@ var startStop = document.getElementById('startStop');
 var currentTime;
 var alarmElement;
 var activeAlarm = false;
-var alarmSound = new Audio("alarm_clock_ringtone.mp3");
+var alarmSound = new Audio("./AlarmTone/alarm_clock_ringtone.mp3");
 alarmSound.loop = true;
 
 // Show time in display:
 function showTime() {
     var now = new Date();
     currentTime = now.toLocaleTimeString();
+
+    if (currentTime === alarmElement) {
+        alarmSound.play();
+    }
     timer.textContent = currentTime;
     setTimeout(showTime, 1000);
 }
@@ -47,3 +51,31 @@ function addHours(id) {
 addHours(hours);
 addMinSec(seconds);
 addMinSec(minutes);
+
+// Set alarm time:
+startStop.onclick = function() {
+    if (activeAlarm === false) {
+        hours.disable = true;
+        minutes.disable = true;
+        seconds.disable = true;
+        ampm.disable = true;
+
+        alarmElement = hours.value + ":" + minutes.value + ":" + seconds.value + " " + ampm.value;
+        this.textContent = "Reset Alarm";
+        activeAlarm = true;
+        // console.log(alarmElement);
+    }
+    else{
+        hours.disable = false;
+        minutes.disable = false;
+        seconds.disable = false;
+        ampm.disable = false;
+
+        // alarmElement = hours.value + ":" + minutes.value + ":" + seconds.value + " " + ampm.value;
+
+        // console.log(alarmElement);
+        alarmSound.pause();
+        this.textContent = "Set Alarm";
+        activeAlarm = false;
+    }
+}
