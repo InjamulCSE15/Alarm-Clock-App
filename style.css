@@ -9,13 +9,16 @@ body {
     background-position:center;
 }
 
-
-
 h1 {
     font-size: 45px;
     color: black;
     font-family: 'Libre Baskerville', serif;
+}
 
+h2 {
+    font-size: 35px;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #hours {
