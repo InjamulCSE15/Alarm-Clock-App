@@ -22,7 +22,7 @@ function showTime() {
 
 showTime();
 
-// Add Time:
+// Add Time (Minutes and Seconds):
 
 function addMinSec(id) {
     var select = id;
@@ -33,5 +33,17 @@ function addMinSec(id) {
     }
 }
 
+// Add Time (Hours):
+
+function addHours(id) {
+    var select = id;
+    var hr = 12;
+
+    for(i=0; i <= hr; i++) {
+        select.options[select.options.length] = new Option(i<10 ? "0" + i : i);
+    }
+}
+
+addHours(hours);
 addMinSec(seconds);
 addMinSec(minutes);
