@@ -1,5 +1,5 @@
-
-var alarmSound = new Audio("/AlarmTone/alarm.mp3");
+// JavaScript Here:
+var alarmSound = new Audio("./AlarmTone/alarm.mp3");
 alarmSound.loop = true;
 
 var h2 = document.getElementById('clock');
